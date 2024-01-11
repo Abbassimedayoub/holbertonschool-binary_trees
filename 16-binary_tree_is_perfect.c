@@ -48,8 +48,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	size_t size = binary_tree_size(tree);
 
 	if (tree == NULL)
-
+	{
 		return (0);
+	}
 	/* Calculate the number of nodes for a perfect binary tree */
 	size_t perfect_nodes = (1 << height) - 1;
 
